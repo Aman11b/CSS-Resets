@@ -1,2 +1,116 @@
 # CSS-Resets
 General every time needed CSS code 
+
+
+/* Global Box Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Text Size Adjustment */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Reset Margins */
+body,
+h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+/* Core Defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  font-family: inherit;
+}
+
+/* Shorter Line Heights for Headings & Inputs */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balanced Text Wrapping for Headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* Link Styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Image Styles */
+img, picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Input and Button Styling */
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Ensure Readable Textareas */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anchored Elements Scroll Margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* List Reset */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Fluid Typography */
+.my-element {
+  font-size: clamp(2rem, calc(1rem + 5vw), 10rem);
+}
+
+/* Maximum Width for Content */
+p, li, blockquote:not([class]) {
+  max-width: 50ch;
+}
+
+h1, h2, h3 {
+  max-width: 20ch;
+}
+
+/* Root Variables */
+:root {
+  --clr-primary: #0042bf;
+  --space: 1rem; /* Example variable name corrected */
+  --step-size: 0.5rem; /* Example variable name corrected */
+  --gutter: 1rem;
+  --border-radius: 0.25rem;
+  --transition-base: 200ms;
+  --tracking: normal;
+}
+
+/* Background and Text Colors for Body */
+body {
+  color: var(--clr-primary);
+  background: #f9f9f9; /* Example background color */
+  font-size: 16px;
+  letter-spacing: var(--tracking);
+}
