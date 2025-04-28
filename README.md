@@ -126,3 +126,25 @@ document.querySelector('#title');
 document.querySelectorAll('.selected')
 ```
 
+## DOM manipulation
+
+```
+const paragrah ==document.querySelector('p');
+paragraph.textContent= 'Hello';
+paragraph.style.color= 'red';
+paragraph.remove();
+document.body.appendChild(paragraph);
+
+```
+
+## Update DOM
+
+```
+
+button.className = 'active';
+button.classList.add ('hidden');
+button.classList.toggle('active');
+button.classList.remove ('hidden);
+
+```
+
