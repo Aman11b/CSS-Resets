@@ -153,3 +153,34 @@ button.classList.remove ('hidden);
 
 ```
 
+## Event Listerner
+
+```
+cont button = document.querySelector ('button');
+
+//direct assignment
+button.onclick = function () {
+console.log('You clicked me !')
+}
+
+//addEventListerner
+button.addEventListerner('click',function(){
+console.log('you clicked me!)})
+
+```
+
+## Funtion Definitions
+
+```
+button.addEventListerner ('click',() => {
+console.log(this)});
+
+button.addEventListerner ('click', (event) => {
+console.log(event.target);  //element that was clicked
+console.log(event.currentTarget); //button (element in whihc eventlisterner was assigne)
+});
+
+
+```
+
+
