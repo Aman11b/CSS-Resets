@@ -82,21 +82,25 @@ General every time needed CSS code
     ol[role='list'] {
       list-style: none;
     }
-    -----------------------------------------------------
+```
+```
     
     .my-element {
       font-size: clamp(2rem, calc(1rem + 5vw), 10rem);
     }
-   -----------------------------------------------------
+```
+```
     
     p, li, blockquote:not([class]) {
       max-width: 50ch;
     }
-    ---------------------------------------------------
+
+```
     h1, h2, h3 {
       max-width: 20ch;
     }
-    -----------------------------------------------------
+
+```
     
     :root {
       --clr-primary: #0042bf;
@@ -107,7 +111,8 @@ General every time needed CSS code
       --transition-base: 200ms;
       --tracking: normal;
     }
-    ----------------------------------------------------
+```
+```
     
     body {
       color: var(--clr-primary);
