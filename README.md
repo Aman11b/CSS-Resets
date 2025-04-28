@@ -177,10 +177,37 @@ console.log(this)});
 
 button.addEventListerner ('click', (event) => {
 console.log(event.target);  //element that was clicked
-console.log(event.currentTarget); //button (element in whihc eventlisterner was assigne)
+console.log(event.currentTarget); //button (element in which eventlisterner was assigne)
 });
 
 
 ```
+
+## Loops
+
+```
+const buttons =document.querySelectorAll('button')
+
+for (let i =0; i<buttons.length: i+=1){
+buttons[i].addEventListener('click', (e)=>{
+screen.style.backgroundColor = e.target.id;});
+}
+```
+```
+for(const i in buttons){
+buttons[i].addEventListener('click',(e)=>{
+screen.style.backgroundColor = e.target.id;})}
+```
+```
+for(const button of buttons){
+buttons.addEventListener('click', (e) +>{
+screen.style.backgroundColor = e.target.id;})}
+```
+```
+buttons.forEach((button)=>{
+buttons.addEventListener('click',(e)=>{
+screen.style.backgroundColor = e.target.id;})})
+```
+
 
 
