@@ -1,4 +1,6 @@
-# CSS-Resets
+### Essentaials 
+
+## CSS-Resets
 General every time needed CSS code 
 
 ```
@@ -114,3 +116,13 @@ General every time needed CSS code
       letter-spacing: var(--tracking);
     }
 ```
+## JS Codes
+
+## document object
+```
+document.getElementById('titlt');  //faster
+document.getElementByClassName('selected');
+document.querySelector('#title');
+document.querySelectorAll('.selected')
+```
+
