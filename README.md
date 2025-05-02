@@ -209,5 +209,45 @@ buttons.addEventListener('click',(e)=>{
 screen.style.backgroundColor = e.target.id;})})
 ```
 
+##   HTML form
+
+```
+   <form id='form' nonvalidate>
+      //nonvalidate is to stop html validation
+      <div>
+         <label for='name'>Name</label>
+         <input id='name' name='name' />
+         <span aria-live='polite' id='name-error'></span>
+      </div>
+   </form>
+```
+
+## onsubmit
+
+```
+const form = document.getElementById('form');
+   function handleSubmit (e) {
+      e.preventDefault ()
+   }
+form.addEventListener('Submit',handleSubmit);
+```
+## retrieveing data from form
+
+```
+const form = document.getElementById ("form");
+
+const handleSubmit = (e) => {
+   e.preventSubmit(e);
+
+   const fomrDate = new FormData(e.target);  //converted into key/value
+   const data = Object.formEntries (formData); // entried into objects
+
+   console.log(data);
+};
+form.addEventListener("Submit", handleSubmit);
+
+```
+
+
 
 
