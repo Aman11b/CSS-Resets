@@ -1,4 +1,4 @@
-### Essentaials 
+### Essentaial codes
 
 ## CSS-Resets
 General every time needed CSS code 
@@ -246,6 +246,71 @@ const handleSubmit = (e) => {
 };
 form.addEventListener("Submit", handleSubmit);
 
+```
+
+## using fetch
+
+```
+fetch('/data.json').then((response)=>{
+if(!response.ok) return console.log('Oops ! something went wrong');
+
+return response.json();
+}).then((data)=>{
+console.log(data);
+})
+
+```
+
+Updating UI
+
+```
+<button id='toggle'>Hiide completed </button>
+<ol id='todos-container'></ol>
+```
+```
+const appendItem = (Item) => {
+const todo = document.createElement('li');
+todo.inneHTML=
+`
+<span>${item.task}</span>
+<input type='checkbox' ${item.completed ? 'checked' : '' }/>
+`
+constiner.appendChild(todo);
+};
+
+```
+```
+const appenItem = (Item) => {
+container.innerHTML +=
+`
+<li>
+<span>${item.task}</span>
+<imput type='checkbox' ${item.completed ? 'checked' : '' } />
+</li>
+`
+}
+```
+
+## Modifying DOM
+```
+<button id='toggle'>Hide Completed</button>
+<ul id=todos-container' data-completed='true'></ul>
+
+```
+
+```
+
+#todos-container[data-completed=false] li:has(input:checked){
+display:none;
+}
+```
+```
+conat toggleBtn = document.getElementById('toggle');
+const handleToggle = (e) =>{
+let displayAll = e.target.textContent === 'Show complted';
+container.dataset.completed = diaplayAll
+e.target.textContent = displayAll ? 'Hide completed' : 'show completed'
+}
 ```
 
 
