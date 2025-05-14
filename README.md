@@ -313,6 +313,75 @@ e.target.textContent = displayAll ? 'Hide completed' : 'show completed'
 }
 ```
 
+## Refractor
+
+# Keeping code DRY (Do not Repeat Yourself)
+# Break up large functions
+
+```
+const form = document.querySelector('form');
+const clearError = () =>{}
+const renderError = (message) =>{}
+const dataIsValid =(name, value) => {}
+const handleChange = (e) => {
+   clearError();
+}
+const handleSubmit = (e) => {
+   e.preventDefault();
+   
+   let isValid =true;
+   //getting data
+   const data =Object.fromEntries(new FormData(e.target));
+
+   //loopig over data
+   Object.keys(data).forEach((name)=>{
+      if(!dataIsValid(name, data[name])){
+         isValid=false;
+      }
+      });
+      if(isValid){
+         renderSuccess()
+      }else{
+         renderError('data invalid')
+   }
+}
+```
+
+## validation
+```
+const dataIsValid =(key, value) => {
+   if(key === 'name'){
+      if(!value.trim()) return false;
+   }
+   if(key === 'email'){
+      if(!value || value.length <12) return false;
+   }
+}
+```
+
+# better apparoach
+
+```
+const validations ={
+name:(value) => !!value.trim(),
+email: (value) => value.include('@'),
+pasowrd: (value) => value.length >=12,
+}
+
+const dataIsValid =(key, value)=>{
+   if(!validations[key]) return true; // if there is not validation
+   return validations[key](value);
+}
+```
+
+## coverting it into pure function 
+```
+const dataIsValid =(key, value, validations) =>{
+if(!validations[key]) return false
+}
+```
+
+
 
 
 
