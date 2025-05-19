@@ -1,6 +1,6 @@
-### Web Accessibilty
+## Web Accessibilty
 
-## Intro to web assessibility 
+# Intro to web assessibility 
 
 + screen reader (blind) - titles are imp | well structure | link text | alt text (all very imp)
 + Digital braille display & voice over (deaf and blind)
@@ -32,7 +32,13 @@
 8. understandable content
 9. keyboard compartabilty
 
+# Assistive Technologies
+> hardware/software that enable people with disability to interact and engage with digital env eg. screen reader
+# Adaptive Statergies
+> techniques people user to interact with digital env eg. changing browser setting
 
+
+## Physical Disability
 
   
   
