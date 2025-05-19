@@ -13,5 +13,26 @@
 
 # large text wrapping
 + wrapped text -> avoid horizontal and vertical scrolling
+
+# Range of ability
+1. auditory
+2. cognitive
+3. physical
+4. speech
+5. visual
+
+# Assessibility perspective
+1. video caption
+2. color contrast (backgournd and fore ground)
+3. voice recognition
+4. text to speech
+5. good layout & consistancy
+6. notification and feedback
+7. Customisable text (size spacing color)
+8. understandable content
+9. keyboard compartabilty
+
+
+
   
   
