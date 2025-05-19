@@ -40,5 +40,50 @@
 
 ## Physical Disability
 
+# keyboard accessibility
+>(anchor form controls img map area) receive keybaord focus but <span> <div> not hence has to make them interactive.
+>hover need porper coading too
+>Focus state and focus order is imp
+>Skip links(direct to main)
+
+## fly-out funtionality
+# Mouse User
+```
+nav > ul li ul{Display: none;}
+nav > ul li:hover{Display: block;}
+```
+```
+var menuItems = document.querySelectorAll('li.has-submenu');
+Array.prototype.forEach.call(menuItems, function(el, i){
+	el.addEventListener("mouseover", function(event){
+		this.className = "has-submenu open";
+		clearTimeout(timer);
+	});
+	el.addEventListener("mouseout", function(event){
+		timer = setTimeout(function(event){
+			document.querySelector(".has-submenu.open").className = "has-submenu";
+		}, 1000);
+	});
+});
+```
+# keyboard User
+>User parent as toggle
+```
+var menuItems = document.querySelectorAll('li.has-submenu');
+Array.prototype.forEach.call(menuItems, function(el, i){
+	el.querySelector('a').addEventListener("click",  function(event){
+		if (this.parentNode.className == "has-submenu") {
+			this.parentNode.className = "has-submenu open";
+			this.setAttribute('aria-expanded', "true");
+		} else {
+			this.parentNode.className = "has-submenu";
+			this.setAttribute('aria-expanded', "false");
+		}
+		event.preventDefault();
+		return false;
+	});
+});
+```
+
   
   
