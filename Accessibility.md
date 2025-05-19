@@ -85,5 +85,17 @@ Array.prototype.forEach.call(menuItems, function(el, i){
 });
 ```
 
+## Switch controls
+> another ways to interact with digital content if mouse keyboard voice and gensture is not possible
+ ## Sip-and-puff switch
+   > sipping straw ->Tabbing
+   > Puffing straw -> Clicking
+ ## Button Switch
+   > can be activate by hand foot or head
+ ## camera Switch
+   > activate by tilting the head into a camera
+ ## Eye Tracking
+   > measuring point of gaze or mpthing o an eye relative to head
+
   
   
