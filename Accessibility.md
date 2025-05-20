@@ -128,6 +128,12 @@ Array.prototype.forEach.call(menuItems, function(el, i){
 2. when coaded properly screen reader announce name role and state of element
 3. built-in keyboard , jumps between heading lists form element links and navigation sequence
 
+## Low Vision
++ Small Font (text resizing and different from zoom).
++ Poor contrast 
++ Animation and moving content
++ Point of regard (place where you are reading and have focus) -on zoom place shoild not change
+
 
 
 
