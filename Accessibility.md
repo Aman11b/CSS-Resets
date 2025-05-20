@@ -97,5 +97,48 @@ Array.prototype.forEach.call(menuItems, function(el, i){
  ## Eye Tracking
    > measuring point of gaze or mpthing o an eye relative to head
 
+## speech Input
+> make space for scrolling dialog box
+> make sure system focus is clearly visible
+> allow user to customize keyboard shotcuts
+
+## Browsing without mouse
+1. Navigation to most element  -> tab , Shift+tab(backwards)
+2. Link -> Enter
+3. Button -> Enter / Space
+4. Checkbox -> Spacebar
+5. Radio buttons -> arrow keys
+6. Select menu -> up donw arrow to select the option spacebar to expand
+7. autocomplete -> type, arro keys navigation enter complete
+8. Dialog -> Esc close
+9. Slider -> arrow keys, Home/End  Begin or end
+10. Menu Bar -> arroe keys and enter
+11. Tab panel -> tab and arrow keys
+12. Tree menu -> arrow keys
+13. Scroll -> arrow keys-> horizibtal vertical , Spacebar/shift -> scroll by page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   
