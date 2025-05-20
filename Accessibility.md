@@ -124,9 +124,11 @@ Array.prototype.forEach.call(menuItems, function(el, i){
 > Video AD audio description and text transcription
 
 ## Screen Reader
-1.reads text heading lists buttons text alt for imag and form input
-2.when coaded properly screen reader announce name role and state of element
+1. reads text heading lists buttons text alt for imag and form input
+2. when coaded properly screen reader announce name role and state of element
 3. built-in keyboard , jumps between heading lists form element links and navigation sequence
+
+
 
 
 
