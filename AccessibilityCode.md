@@ -38,4 +38,60 @@
 + test with screen reader
 
 # Keyboard Accessibility
+
+## tab index
+>positive tabindex makes it first to access (changes sequence)
+
+>Tab index should be 0(tabable) eg make div tab-able
+
+> -1(doesnt do anything make you skip that) user cant access
+```
+<button>One</button>
+<button tabIndex='3'>Two</button>
+```
+
+## skip link
+> directly to the main content
+
+# Audio Impaired Accessibility
+> Audio Description and closed captions
+> Different ways of contacting
+
+# Mobility Impaired accessibility
+> clickable button spaced around
+
+> make aria large enough to click
+
+> dont include time based things
+
+# Other accessibility features 
+```
+@media (perefer-reduced-motion){
+ *{
+   animation: none !important;
+ }
+}
+```
+> swap font feature
+
+> Auto focus
+```
+<input autofocus />
+```
+> mobile friendly design
+
+# tools
+> lighthouse
+
+> eslint-plugin-jsx-ally
+
+
+
+
+
+
+
+
+
+
   
