@@ -1,4 +1,6 @@
- # Visually Impared accessibility
+# Common accessibility best practices
+ 
+# Visually Impared accessibility
 
 ## lables
 > label should be assigned to input
