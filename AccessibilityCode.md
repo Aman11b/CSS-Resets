@@ -54,13 +54,23 @@
 <img src='' alt = 'Two dogs running throght a field'>
 ```
 ## Keyboard-accessible navigation and functionality
-eg
+>example
 ```
 <button aria-haspopup='dialog'
         aria-expanded='false'
         onClick='openModel()'>Open Model
 </button>
 ```
+## Captions and transcripts for audio/video
+```
+<video src='my-video.mp4' controls>
+  <track src='captions.vtt' kind='captions' srclang='en' label='English'>
+</video>
+```
++ caption - > text versions of speech and other important audio content
++ Transcript -> transcript should include descriptions of important audio information (like laughter) and visual information (such as someone entering the room).
++ Audio Descriptions -> Audio descriptions help users with visual disabilities perceive content that is presented only visually
+
 
 # Visually Impared accessibility
 
