@@ -17,7 +17,7 @@
 ## Sufficient color contrast
 > color contrast between background and text is critical
 
-# HSL\HSLa (Hue saturation lightness alpha)
+## HSL\HSLa (Hue saturation lightness alpha)
 >HSL model was created as an alternative to RGB color model and more closely aligns with how human perceive color
 
 >Hue is qualitative wayn to describe color red 0 green 120 blue 240
@@ -32,7 +32,7 @@
 + Protanopia (red blind) reduced sensitivity to red color
 + Achromatopsia or monochromatism (complete color blind)
   
-# calculate color contrast
+### calculate color contrast
 > uses relative luminance [ color value ]:1
 
 > 21:1 hightes pure black again pure white
@@ -124,9 +124,9 @@ View our <a href="/products">latest products</a>.
 + contact info (without visuals)
 + test with screen reader
 
-# Keyboard Accessibility
+## Keyboard Accessibility
 
-## tab index
+### tab index
 >positive tabindex makes it first to access (changes sequence)
 
 >Tab index should be 0(tabable) eg make div tab-able
@@ -137,21 +137,21 @@ View our <a href="/products">latest products</a>.
 <button tabIndex='3'>Two</button>
 ```
 
-## skip link
+### skip link
 > directly to the main content
 
-# Audio Impaired Accessibility
+## Audio Impaired Accessibility
 > Audio Description and closed captions
 > Different ways of contacting
 
-# Mobility Impaired accessibility
+## Mobility Impaired accessibility
 > clickable button spaced around
 
 > make aria large enough to click
 
 > dont include time based things
 
-# Other accessibility features 
+### Other accessibility features 
 ```
 @media (perefer-reduced-motion){
  *{
@@ -167,7 +167,7 @@ View our <a href="/products">latest products</a>.
 ```
 > mobile friendly design
 
-# tools
+### tools
 > lighthouse
 
 > eslint-plugin-jsx-ally
