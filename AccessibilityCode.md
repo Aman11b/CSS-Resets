@@ -71,10 +71,23 @@
 + Transcript -> transcript should include descriptions of important audio information (like laughter) and visual information (such as someone entering the room).
 + Audio Descriptions -> Audio descriptions help users with visual disabilities perceive content that is presented only visually
 
+## Descriptive link text and headings
+> Wraps the most descriptive part of the text with an anchor tag.
+```
+View our <a href="/products">latest products</a>.
+```
+## Interactive elements must have discernible text
+```
+<a aria-label="Follow Frontend Mentor on X" href="https://www.x.com/frontendmentor">
+  <svg>
+    <!-- SVG content -->  
+  </svg>
+</a>
+```
 
-# Visually Impared accessibility
+## Visually Impared accessibility
 
-## lables
+### lables
 > label should be assigned to input
 ```
   <lable for='name' >Name</lable>
