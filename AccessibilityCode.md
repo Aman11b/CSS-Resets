@@ -48,6 +48,19 @@
 + @prefer-color-scheme (to create dark theme)
 + @prefer-contrast (high contrast)
 
+## Text alternative for image and media
+> porviding text alt for non-text content such as image icon media
+```
+<img src='' alt = 'Two dogs running throght a field'>
+```
+## Keyboard-accessible navigation and functionality
+eg
+```
+<button aria-haspopup='dialog'
+        aria-expanded='false'
+        onClick='openModel()'>Open Model
+</button>
+```
 
 # Visually Impared accessibility
 
