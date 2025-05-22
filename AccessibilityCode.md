@@ -76,6 +76,13 @@
 ```
 View our <a href="/products">latest products</a>.
 ```
+
+## Forms with proper labeling and error handling
+```
+<label for="email">Email</label>
+<input type="email" id="email" name="email" autocomplete="email" required>
+```
+
 ## Interactive elements must have discernible text
 ```
 <a aria-label="Follow Frontend Mentor on X" href="https://www.x.com/frontendmentor">
