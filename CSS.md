@@ -80,6 +80,11 @@ General every time needed CSS code
     ol[role='list'] {
       list-style: none;
     }
+   :root{
+   }
+
+   @media screen and (max-width: 375px) {
+   }
 ```
 ```
     
