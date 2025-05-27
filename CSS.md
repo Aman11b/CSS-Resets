@@ -64,6 +64,10 @@ General every time needed CSS code
       font-family: inherit;
       font-size: inherit;
     }
+
+   input:focus, textarea:focus, select:focus {
+     outline: 2px solid #007bff;
+   }
     
     
     textarea:not([rows]) {
