@@ -44,8 +44,27 @@ input:focus,textarea:focus,select:focus{
   outline: 2px solid #oo7bff;
 }
 ```
+## Use proper markup for required fields
+```
+<label for='email'>Email (required)</label>
+<label for="name">
+  Name <span class="required">*</span></label>
+<input aria-describedby="required-description" id="name" type="text" />
+<input type='email' id='email' name='email' required aria-required="true">
 
+```
+## Provide clear error messages
 
+```
+<label for='email'> Email </lable>
+<input type='email' id='email' name='emial' autocomplete='email' aria-invalied='true' aria-describedby='email-error'>
+<span id='email-error' class='error-message'>Enter valid email</span>
+
+```
+# nonvalide
+```
+<form action="/contact" method="POST" novalidate>
+```
 
 
 
