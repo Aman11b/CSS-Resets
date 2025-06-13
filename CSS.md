@@ -89,6 +89,10 @@ General every time needed CSS code
 
    @media screen and (max-width: 375px) {
    }
+
+   @media only screen and (min-width: 764px) and (max-width: 1024px) {
+   
+   }
 ```
 ```
     
