@@ -144,3 +144,31 @@ General every time needed CSS code
       letter-spacing: var(--tracking);
     }
 ```
+## Methodologies and architectures
+
+### BEM (Block, Element, Modifier)
++ divide UI into independent blocks
++ blocks can have elements
++ both block and element can have modifier
+
+1. block -> standalone entity that is meaninginful nav, list, card etc
+2. element -> not satndalone but semantically tied to tied to block  nav > item  , list>item , card >title
+3. modifier -> flog on block or element to chnage appearance or behaviour   selected, disabled, highlighted, checked
+
+```
+<nav class='nav'>
+   <ul class='nav__list'>
+      <li class='nav__item'>
+         <a href="/about" class='nav__link nav__link--active'>About</a>
+      </li>
+      <li class='nav__item'>
+         <a href='/pricing' class=''nav__link>Pricing</a>
+      </li>
+   </ul>
+</nav> 
+```
++ .nav -> class represent the main block
++ .nav__list represent each item in thenavigation list
++ .nav__list--active this for additional styling
+
+
