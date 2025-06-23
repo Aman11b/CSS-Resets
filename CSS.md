@@ -152,8 +152,20 @@ General every time needed CSS code
 + both block and element can have modifier
 
 1. block -> standalone entity that is meaninginful nav, list, card etc
-2. element -> not satndalone but semantically tied to tied to block  nav > item  , list>item , card >title
+2. element -> no standalone meaning not standalone but semantically tied to tied to block  nav > item  , list>item , card >title
 3. modifier -> flog on block or element to chnage appearance or behaviour   selected, disabled, highlighted, checked
+
+```
+/* Block component */
+.btn {}
+
+/* Element that depends upon the block */ 
+.btn__price {}
+
+/* Modifier that changes the style of the block */
+.btn--orange {} 
+.btn--big {}
+```
 
 ```
 <nav class='nav'>
@@ -168,7 +180,7 @@ General every time needed CSS code
 </nav> 
 ```
 + .nav -> class represent the main block
-+ .nav__list represent each item in thenavigation list
++ .nav__list represent each item in the navigation list
 + .nav__list--active this for additional styling
 
 
