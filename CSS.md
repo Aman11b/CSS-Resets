@@ -205,3 +205,8 @@ General every time needed CSS code
    </ul>
 </nav>
 ```
+1. composition      .flex  .flex-wrap create a flexible ,wrapping layout
+2. Utility   .gap-sm .padding-sm  reusable style applied across component
+3. Blocks.nav .nav__list .nav__item .nav__link
+4. Exception  data-state="active"
+> [] as we dont apply style to bracket they are ignored by html and css
