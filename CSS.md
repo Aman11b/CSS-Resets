@@ -183,4 +183,25 @@ General every time needed CSS code
 + .nav__list represent each item in the navigation list
 + .nav__list--active this for additional styling
 
+### CUBE CSS (Composition, utility, block, exception)
++ most of the work is alredy done for you with global and high-level styles
++ colors trpography other global styles are defined first
 
+1. Composition -> how different part of page fit together
+2. utility -> small single purpose class used to modify appearance of element
+3. block -> main building block like cards header footer section button
+4. Exception -> exception are styles taht deviate from the global and block level styles  added via data attributes
+
+
+```
+<nav class = 'nav'>
+   <ul class='[ nav__list ] [ flex flex-wrap ] [ gap-sm ]'>
+      <li class="nav__item">
+         <a href="/about" class="[ nav_link ] [ padding-sm ]" data-state="active">About </a>
+      </li>
+      <li class="nav__item">
+         <a href="/pricing" class="[nav__link] [paddin-sm]">Pricing</a>
+      </li>
+   </ul>
+</nav>
+```
