@@ -94,9 +94,23 @@ General every time needed CSS code
      white-space:nowrap;
      width:1px
    }
-
-   :root{
-
+   
+   /* remove all animation,transition */
+   
+   @media (prefer-reduced-motion: reduce){
+       html:focus-within{
+           scroll-behavior: auto;
+       }
+   
+       *,
+       *::before,
+       *::after{
+           animation-duration: 0.01ms !important;
+           animation-iteration-count: 1 !important;
+           transition-duration: 0.01ms !important;
+           scroll-behavior: auto !important;
+       }
+   
    }
 
    @media screen and (max-width: 375px) {
