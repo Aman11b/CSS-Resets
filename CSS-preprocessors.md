@@ -45,6 +45,45 @@ color:pink;
 }
 ```
 
+### Mixins
+> reusable block of CSS can be used in multiple selector
+
+```
+   @mixin breakpoint($size){
+      @if $size == mobile {
+         @media (min-width: 30em){
+            @content;
+         }
+      }
+      @else if $size == tablet{
+         @media (min-width:48em){
+            @content;
+         }
+      }
+   }
+   .testimonials{
+      display:flex;fle
+      x-direction:column;
+      @include breakpoint(mobile){
+         flex-direction:row;
+      }
+   
+   }
+```
+
+### Extend
+
+```
+.message{
+   border:1px solid #ccc;
+}
+.success{
+   @extend .message;
+   border-color:green;
+}
+
+
+```
 
 
   
