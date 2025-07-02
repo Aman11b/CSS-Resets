@@ -158,3 +158,6 @@ General every time needed CSS code
       letter-spacing: var(--tracking);
     }
 ```
+```
+npm install --save-dev gh-pages    npx gh-pages -d .
+```
