@@ -35,3 +35,27 @@
 }
 ```
 >  https://cubic-bezier.com/#.17,.67,.83,.67
+
+### transition can take number of values but only two are important
+1. the name of the porperty we wish to animate
+2. the duration of the animate
+
+## Animation Performance
+1. transform and opacity are cheap to animate
+2. GPU (hardware-accelerated)ad CPU handle aniamtion differently
+3. will-change (porperty hinf browser that we are going to animate thie element) -> hardware accelerated
+
+### UX touched
+1. Deplay -> (transition-delay)
+```
+  .dropdown {
+    opacity: 0;
+    transition: opacity 400ms;
+    transition-delay: 300ms;
+  }
+  .dropdown-wrapper:hover .dropdown {
+    opacity: 1;
+    transition: opacity 100ms;
+    transition-delay: 0ms;
+  }
+```
