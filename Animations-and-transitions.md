@@ -59,3 +59,30 @@
     transition-delay: 0ms;
   }
 ```
+# CSS Animations
+
+1. Multiple keyfrarmes -> allow for more complex and detailed animation
+2. greater control -> more control over intermediate state
+3. Loopeing and alteration -> can loop indefinately or alter between forward anf backwards
+
+### when to user animation 
+1. creating loading or spinning progress bar
+2. animating elment along a path or tragetory
+3. implementing multi step animation with different stages
+4. creating standalone animation
+@keyframe pulse{
+
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: sacle(1.2);
+  }
+  100%{
+    transform: scale(1);
+  }
+  
+}
+.element{
+  animation: pulse 1s infinite;
+}
