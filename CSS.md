@@ -65,6 +65,10 @@ General every time needed CSS code
       font-size: inherit;
     }
 
+   button{
+       cursor: pointer;
+   }
+
    input:focus, textarea:focus, select:focus {
      outline: 2px solid #007bff;
    }
