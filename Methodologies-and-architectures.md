@@ -9,7 +9,7 @@
 2. element -> no standalone meaning not standalone but semantically tied to tied to block  nav > item  , list>item , card >title
 3. modifier -> flog on block or element to chnage appearance or behaviour   selected, disabled, highlighted, checked
 
-```
+```css
 /* Block component */
 .btn {}
 
@@ -21,7 +21,7 @@
 .btn--big {}
 ```
 
-```
+```html
 <nav class='nav'>
    <ul class='nav__list'>
       <li class='nav__item'>
@@ -47,7 +47,7 @@
 4. Exception -> exception are styles taht deviate from the global and block level styles  added via data attributes
 
 
-```
+```html
 <nav class = 'nav'>
    <ul class='[ nav__list ] [ flex flex-wrap ] [ gap-sm ]'>
       <li class="nav__item">
@@ -72,7 +72,7 @@
 4. State  ->describe how modules and layour will look in a particular state   hidden expanded, active inactive
 5. Theme  ->visula styling applied across different section/page to provide oncsistant look and feel   dark light theme
 
-```
+```html
 <nav class="nav">
   <ul class="nav-list">
     <li class="nav-item">
