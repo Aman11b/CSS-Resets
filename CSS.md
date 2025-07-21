@@ -1,7 +1,7 @@
 ## CSS-Resets
 General every time needed CSS code 
 
-```
+```css
     *,
     *::before,
     *::after {
@@ -124,25 +124,23 @@ General every time needed CSS code
    
    }
 ```
-```
-    
+```css
     .my-element {
       font-size: clamp(2rem, calc(1rem + 5vw), 10rem);
     }
 ```
-```
+```css
     
     p, li, blockquote:not([class]) {
       max-width: 50ch;
     }
-
 ```
+```css
     h1, h2, h3 {
       max-width: 20ch;
     }
-
 ```
-    
+```css
     :root {
       --clr-primary: #0042bf;
       --space: 1rem; /* Example variable name corrected */
@@ -153,8 +151,7 @@ General every time needed CSS code
       --tracking: normal;
     }
 ```
-```
-    
+```css
     body {
       color: var(--clr-primary);
       background: #f9f9f9; /* Example background color */
@@ -162,6 +159,10 @@ General every time needed CSS code
       letter-spacing: var(--tracking);
     }
 ```
+> deployment
+```bash
+npm install --save-dev gh-pages
 ```
-npm install --save-dev gh-pages    npx gh-pages -d .
+```bash
+npx gh-pages -d 
 ```
