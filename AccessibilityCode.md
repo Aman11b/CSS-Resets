@@ -2,7 +2,7 @@
 
 ## semaintic well -structured HTML
 > user appropirate HTML element for intended purpose
-```
+```html
 <header>
  <nav>
    <ul>
@@ -50,19 +50,19 @@
 
 ## Text alternative for image and media
 > porviding text alt for non-text content such as image icon media
-```
+```html
 <img src='' alt = 'Two dogs running throght a field'>
 ```
 ## Keyboard-accessible navigation and functionality
 >example
-```
+```html
 <button aria-haspopup='dialog'
         aria-expanded='false'
         onClick='openModel()'>Open Model
 </button>
 ```
 ## Captions and transcripts for audio/video
-```
+```html
 <video src='my-video.mp4' controls>
   <track src='captions.vtt' kind='captions' srclang='en' label='English'>
 </video>
@@ -73,18 +73,18 @@
 
 ## Descriptive link text and headings
 > Wraps the most descriptive part of the text with an anchor tag.
-```
+```html
 View our <a href="/products">latest products</a>.
 ```
 
 ## Forms with proper labeling and error handling
-```
+```html
 <label for="email">Email</label>
 <input type="email" id="email" name="email" autocomplete="email" required>
 ```
 
 ## Interactive elements must have discernible text
-```
+```html
 <a aria-label="Follow Frontend Mentor on X" href="https://www.x.com/frontendmentor">
   <svg>
     <!-- SVG content -->  
@@ -96,18 +96,18 @@ View our <a href="/products">latest products</a>.
 
 ### lables
 > label should be assigned to input
-```
+```html
   <lable for='name' >Name</lable>
   <input id='name' type='text'/>
 ```
 > label without lable tag
-```
+```html
 <input aria-lable='Name' type='text' />
 ```
 
 ## toast mesages
 > when data pops up on screen
-```
+```html
 <div data-container aria-live='polite'></div>
 ```
 + off
@@ -117,14 +117,14 @@ View our <a href="/products">latest products</a>.
 
 ### Image
 > Alt text is important
-```
+```html
 <img src='' alt='' />
 ```
 
 ## User semantic HTML
 > main aside nav h1(prolly one) h2 h3 h4 h5 (to use hierarchy) header section article button
 ### link
-```
+```html
 <a href=''>Click to view something ( detailed)</a>
 ```
 + zoom in out wokring fine
@@ -139,7 +139,7 @@ View our <a href="/products">latest products</a>.
 >Tab index should be 0(tabable) eg make div tab-able
 
 > -1(doesnt do anything make you skip that) user cant access
-```
+```html
 <button>One</button>
 <button tabIndex='3'>Two</button>
 ```
@@ -159,7 +159,7 @@ View our <a href="/products">latest products</a>.
 > dont include time based things
 
 ### Other accessibility features 
-```
+```css
 @media (perefer-reduced-motion){
  *{
    animation: none !important;
@@ -169,7 +169,7 @@ View our <a href="/products">latest products</a>.
 > swap font feature
 
 > Auto focus
-```
+```html
 <input autofocus />
 ```
 > mobile friendly design
