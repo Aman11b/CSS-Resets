@@ -1,5 +1,5 @@
 ## Association of labels and inputs
-```
+```html
 <label for='name'>
   Name <span class='required'>*</span>
   <input type='text' id='name' name='name'>
@@ -7,7 +7,7 @@
 ```
 > name attribute -> browser porvide autofill
 
-```
+```html
 <input
   type='text'
   id='name'
@@ -17,7 +17,7 @@
 ```
 ## Marking required
 > adding aria-hidden on container it will not be announced
-```
+```html
 <div class='form-group'>
   <label for='name'>
     Name
@@ -27,7 +27,7 @@
   <input type='text' id='name' name='name' autocomplete='name' required>
 </div>
 ```
-```
+```css
 .sr-only{
   clip-path:inset(100%);
   clip:rect(0 0 0 0 );
@@ -42,12 +42,12 @@
 
 > white-space:nowrap  one line
 
-```
+```html
 <form action="/contact" method="POST" novalidate>
 ```
 ## Descriptions & Error Messages
 ### Descriptions
-```
+```html
 <div class='form-group'>
   <label class='password'>
     Password
@@ -65,7 +65,7 @@
 </div>
 ```
 ### Validation
-```
+```html
 <div class='form-group'>
   <label for=password'>
     Password
