@@ -48,11 +48,11 @@
 
 ## fly-out funtionality
 # Mouse User
-```
+```css
 nav > ul li ul{Display: none;}
 nav > ul li:hover{Display: block;}
 ```
-```
+```js
 var menuItems = document.querySelectorAll('li.has-submenu');
 Array.prototype.forEach.call(menuItems, function(el, i){
 	el.addEventListener("mouseover", function(event){
@@ -68,7 +68,7 @@ Array.prototype.forEach.call(menuItems, function(el, i){
 ```
 # keyboard User
 >User parent as toggle
-```
+```js
 var menuItems = document.querySelectorAll('li.has-submenu');
 Array.prototype.forEach.call(menuItems, function(el, i){
 	el.querySelector('a').addEventListener("click",  function(event){
