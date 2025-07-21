@@ -5,13 +5,13 @@
 
 ### landmark
 > identify cirtical areas of the page
-```
+```html
   <form role='search'></form>
 ```
 ### Regions
 + role= 'region' with aria-label or aria-labeledby
 > define a section pf the page as perceivable section
-```
+```html
 <section aria-labelledby='testimonial-heading'>
   <h2 id='testimonial-heading'>
     What poeple have said about us
@@ -23,7 +23,7 @@
 + aria-labelledby
 + aria-describeby
 > porvide accessible names and descriptions for element
-```
+```html
 <button aria-label='Close modal'>X</button>
 ```
 ### Live regions
@@ -31,7 +31,7 @@
 + aria-atomic
 + aria-relevant
 > announce dynamic content updates to asistive technologies
-```
+```html
 <span class='error-message' aria-live='polite'>
 </span>
 ```
@@ -95,7 +95,7 @@
 3. aria-describledby   ->refer ot help text element
 4. aria-live   ->auto read content update
 
-```
+```html
 <div role='dialog' aria-labelledby='dialog-title' aria-describedby='dialog-description'>
   <h2 id='dialog-title'>Delete comment</h2>
   <p id='dialog-description'>Arue you sure you want to delete this comment? this action cannot be undone.</p>
