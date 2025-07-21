@@ -1,7 +1,7 @@
 ## JS Codes
 
 ## document object
-```
+```js
 document.getElementById('titlt');  //faster
 document.getElementByClassName('selected');
 document.querySelector('#title');
@@ -10,7 +10,7 @@ document.querySelectorAll('.selected')
 
 ## DOM manipulation
 
-```
+```js
 const paragrah ==document.querySelector('p');
 paragraph.textContent= 'Hello';
 paragraph.style.color= 'red';
@@ -21,7 +21,7 @@ document.body.appendChild(paragraph);
 
 ## Update DOM
 
-```
+```js
 
 button.className = 'active';
 button.classList.add ('hidden');
@@ -32,7 +32,7 @@ button.classList.remove ('hidden);
 
 ## Event Listerner
 
-```
+```js
 cont button = document.querySelector ('button');
 
 //direct assignment
@@ -48,7 +48,7 @@ console.log('you clicked me!)})
 
 ## Funtion Definitions
 
-```
+```js
 button.addEventListerner ('click',() => {
 console.log(this)});
 
@@ -62,7 +62,7 @@ console.log(event.currentTarget); //button (element in which eventlisterner was 
 
 ## Loops
 
-```
+```js
 const buttons =document.querySelectorAll('button')
 
 for (let i =0; i<buttons.length: i+=1){
@@ -70,17 +70,17 @@ buttons[i].addEventListener('click', (e)=>{
 screen.style.backgroundColor = e.target.id;});
 }
 ```
-```
+```js
 for(const i in buttons){
 buttons[i].addEventListener('click',(e)=>{
 screen.style.backgroundColor = e.target.id;})}
 ```
-```
+```js
 for(const button of buttons){
 buttons.addEventListener('click', (e) +>{
 screen.style.backgroundColor = e.target.id;})}
 ```
-```
+```js
 buttons.forEach((button)=>{
 buttons.addEventListener('click',(e)=>{
 screen.style.backgroundColor = e.target.id;})})
@@ -88,7 +88,7 @@ screen.style.backgroundColor = e.target.id;})})
 
 ##   HTML form
 
-```
+```html
    <form id='form' nonvalidate>
       //nonvalidate is to stop html validation
       <div>
@@ -101,7 +101,7 @@ screen.style.backgroundColor = e.target.id;})})
 
 ## onsubmit
 
-```
+```js
 const form = document.getElementById('form');
    function handleSubmit (e) {
       e.preventDefault ()
@@ -110,7 +110,7 @@ form.addEventListener('Submit',handleSubmit);
 ```
 ## retrieveing data from form
 
-```
+```js
 const form = document.getElementById ("form");
 
 const handleSubmit = (e) => {
@@ -127,7 +127,7 @@ form.addEventListener("Submit", handleSubmit);
 
 ## using fetch
 
-```
+```js
 fetch('/data.json').then((response)=>{
 if(!response.ok) return console.log('Oops ! something went wrong');
 
@@ -140,11 +140,11 @@ console.log(data);
 
 Updating UI
 
-```
+```html
 <button id='toggle'>Hiide completed </button>
 <ol id='todos-container'></ol>
 ```
-```
+```js
 const appendItem = (Item) => {
 const todo = document.createElement('li');
 todo.inneHTML=
@@ -156,7 +156,7 @@ constiner.appendChild(todo);
 };
 
 ```
-```
+```js
 const appenItem = (Item) => {
 container.innerHTML +=
 `
@@ -169,19 +169,19 @@ container.innerHTML +=
 ```
 
 ## Modifying DOM
-```
+```html
 <button id='toggle'>Hide Completed</button>
 <ul id=todos-container' data-completed='true'></ul>
 
 ```
 
-```
+```js
 
 #todos-container[data-completed=false] li:has(input:checked){
 display:none;
 }
 ```
-```
+```js
 conat toggleBtn = document.getElementById('toggle');
 const handleToggle = (e) =>{
 let displayAll = e.target.textContent === 'Show complted';
@@ -195,7 +195,7 @@ e.target.textContent = displayAll ? 'Hide completed' : 'show completed'
 # Keeping code DRY (Do not Repeat Yourself)
 # Break up large functions
 
-```
+```js
 const form = document.querySelector('form');
 const clearError = () =>{}
 const renderError = (message) =>{}
@@ -225,7 +225,7 @@ const handleSubmit = (e) => {
 ```
 
 ## validation
-```
+```js
 const dataIsValid =(key, value) => {
    if(key === 'name'){
       if(!value.trim()) return false;
@@ -238,7 +238,7 @@ const dataIsValid =(key, value) => {
 
 # better apparoach
 
-```
+```js
 const validations ={
 name:(value) => !!value.trim(),
 email: (value) => value.include('@'),
@@ -252,7 +252,7 @@ const dataIsValid =(key, value)=>{
 ```
 
 ## coverting it into pure function 
-```
+```js
 const dataIsValid =(key, value, validations) =>{
 if(!validations[key]) return false
 }
