@@ -12,7 +12,7 @@
 3. smmothy chnage border color or form field when gains focus
 4. displaying dropdown when hovering over parent
 
-```
+```css
 .button{
   background-color: #3498db;
   transition: backgroud-color 0.3s ease;
@@ -29,7 +29,7 @@
 4. ease-out -> start fast, progessively gets slower ubtill the end
 5. ease-in-out ->similar to ease faster acceleration in between
 > using cibic-bezier() define custom easing curve
-```
+```css
 .btn {
   transition: transform 250ms cubic-bezier(0.1, 0.2, 0.3, 0.4);
 }
@@ -47,7 +47,7 @@
 
 ### UX touched
 1. Deplay -> (transition-delay)
-```
+```css
   .dropdown {
     opacity: 0;
     transition: opacity 400ms;
@@ -70,6 +70,7 @@
 2. animating elment along a path or tragetory
 3. implementing multi step animation with different stages
 4. creating standalone animation
+```css
 @keyframe pulse{
 
   0%{
@@ -86,3 +87,4 @@
 .element{
   animation: pulse 1s infinite;
 }
+```
