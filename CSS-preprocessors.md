@@ -11,7 +11,7 @@
 ### Variables
 > its like custom porperty in css
 
-```
+```scss
 $primary-color: #ff000
 $font-size: 1.2rem;
 
@@ -23,7 +23,7 @@ $font-size: 1.2rem;
 ```
 
 ### nesting
-```
+```scss
   nav{
     ul{
       margin:0;
@@ -38,7 +38,7 @@ $font-size: 1.2rem;
 ### Partials and @use
 
 in _variable.scss we can have variables and then we can import it via @use
-```
+```scss
 @use 'variables';
 .button{
 color:pink;
@@ -48,7 +48,7 @@ color:pink;
 ### Mixins
 > reusable block of CSS can be used in multiple selector
 
-```
+```scss
    @mixin breakpoint($size){
       @if $size == mobile {
          @media (min-width: 30em){
@@ -73,7 +73,7 @@ color:pink;
 
 ### Extend
 
-```
+```scss
 .message{
    border:1px solid #ccc;
 }
