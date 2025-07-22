@@ -1,4 +1,4 @@
-## Basics
+## Tailwind 4 setup
 ```cmd
 npm init
 ```
@@ -102,4 +102,48 @@ cp -r src/js public/
 
 ```bash
 npm run deploy
+```
+
+
+## tainwind 3 setup
+```cmd
+npm install -D tailwindcss@3
+npx tailwindcss init
+```
+> Add the paths to all of your template files in your tailwind.config.js file.
+```js
+ /** @type {import('tailwindcss').Config} */
+export default {
+   content: ["./src/**/*.{html,js}"],
+   theme: {
+     extend: {},
+   },
+   plugins: [],
+ }
+```
+> Add the @tailwind directives for each of Tailwind’s layers to your main CSS file.
++ src/input.css
+```cmd
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+```cmd
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+```
++ src/index.html
+```html
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+  <h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
+</body>
+</html>
 ```
